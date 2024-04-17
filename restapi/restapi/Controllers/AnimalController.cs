@@ -50,7 +50,7 @@ public class AnimalController : ControllerBase
     }
 
 
-    [HttpPut("{id:int")]
+    [HttpPut("{id:int}")]
     public IActionResult UpdateAnimal(int id, Animal animal)
     {
         var animalToEdit = _animals.FirstOrDefault(a => a.Id == id);
